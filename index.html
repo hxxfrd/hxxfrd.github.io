@@ -503,8 +503,15 @@ section { position:relative; z-index:1; padding:100px 60px; }
   line-height:1.5; margin-bottom:12px;
 }
 .ach-card p { font-size:14px; line-height:1.7; }
-.ach-badge {
-  display:inline-block; margin-top:16px;
+.ach-img-wrap {
+  width:100%; height:140px; overflow:hidden;
+  margin-bottom:16px; border:1px solid var(--border);
+}
+.ach-img-wrap img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 0.4s;
+}
+.ach-card:hover .ach-img-wrap img { transform:scale(1.05); }
   font-family:'Share Tech Mono',monospace;
   font-size:10px; letter-spacing:2px; padding:5px 14px;
   border:1px solid var(--yellow); color:var(--yellow);
@@ -786,7 +793,7 @@ footer {
         &gt; <span class="rotate-text" id="rotateText">Penetration Tester</span><span class="t-cursor"></span>
       </div>
       <p class="hero-desc">
-        Dedicated security professional specializing in identifying, analyzing, and mitigating vulnerabilities across web, network, and API surfaces. Recognized by 15+ organizations globally.
+        Dedicated security professional specializing in identifying, analyzing, and mitigating vulnerabilities across web, network, and API surfaces. 
       </p>
       <div class="hero-btns">
         <a href="images/SANWOOLA_OLUWASEYI _CV.pdf" download class="btn-primary">Check Out Resume</a>
@@ -861,7 +868,9 @@ footer {
   </div>
   <div class="about-grid">
     <div class="about-id-card reveal">
-      <div class="id-avatar">SOF</div>
+      <div class="id-avatar" style="padding:0;overflow:hidden;border-radius:0;">
+        <img src="images/mypics.png" alt="hxxfrd" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
       <div class="id-name">SANWOOLA OLUWASEYI F.</div>
       <div class="id-alias">@hxxfrd</div>
       <hr class="id-divider">
@@ -878,7 +887,7 @@ footer {
         I am Sanwoola Oluwaseyi Fredrick — a dedicated penetration tester and bug hunter with a passion for safeguarding organizations from cyber threats. With extensive experience in web security and bug hunting, I specialize in identifying, analyzing, and mitigating security vulnerabilities before adversaries can exploit them.
       </p>
       <p>
-        My success stems from a deep understanding of cybersecurity principles, hands-on expertise with a wide range of security tools, and a proactive approach to uncovering vulnerabilities through rigorous testing and innovative techniques. I'm recognized as a Security Researcher and rewarded by more than 15+ companies globally — including NASA, T-Mobile, GovTech Singapore, Telenor Sweden, and the Government of Bali.
+        My success stems from a deep understanding of cybersecurity principles, hands-on expertise with a wide range of security tools, and a proactive approach to uncovering vulnerabilities through rigorous testing and innovative techniques. I'm recognized as a Security Researcher and rewarded by more than 50+ companies globally — including NASA, T-Mobile, GovTech Singapore, Telenor Sweden, and the Government of Bali.
       </p>
       <div class="skill-tags">
         <span class="skill-tag">Burp Suite</span>
@@ -982,48 +991,48 @@ footer {
     <h2 class="section-title">Hall of Fame & Recognition</h2>
   </div>
   <div class="achievements-grid">
-    <div class="ach-card reveal">
+    <a href="images/telenorhof.png" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;">
       <span class="ach-org">Telenor Sweden</span>
-      <div class="ach-icon">🏆</div>
+      <div class="ach-img-wrap"><img src="images/telenor.png" alt="Telenor" /></div>
       <h4>Telenor Sweden Bug Bounty & Hall of Fame</h4>
       <p>Recognized for responsibly disclosing a critical security vulnerability in Telenor Sweden's digital infrastructure.</p>
-      <span class="ach-badge">Hall of Fame</span>
-    </div>
-    <div class="ach-card reveal" style="transition-delay:0.1s">
+      <span class="ach-badge">View Certificate →</span>
+    </a>
+    <a href="images/govhof.png" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;transition-delay:0.1s;">
       <span class="ach-org">GovTech Singapore</span>
-      <div class="ach-icon">🇸🇬</div>
-      <h4>GovTech Vulnerability Disclosure Programme</h4>
-      <p>Acknowledged in Singapore's Government Technology Agency Hall of Fame for an Information Disclosure finding, earning a verified Credly badge.</p>
-      <span class="ach-badge">VDP Hall of Fame</span>
-    </div>
-    <div class="ach-card reveal" style="transition-delay:0.2s">
+      <div class="ach-img-wrap"><img src="images/govtech.png" alt="GovTech Singapore" /></div>
+      <h4>GovTech Vulnerability Disclosure Programme Hall of Fame</h4>
+      <p>Acknowledged in Singapore's Government Technology Agency Hall of Fame for an Information Disclosure finding.</p>
+      <span class="ach-badge">View Certificate →</span>
+    </a>
+    <a href="images/lor.png" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;transition-delay:0.2s;">
       <span class="ach-org">NASA</span>
-      <div class="ach-icon">🚀</div>
+      <div class="ach-img-wrap"><img src="images/nasa.png" alt="NASA" /></div>
       <h4>NASA Letter of Recognition & Hall of Fame</h4>
       <p>Received an official Letter of Recognition from the National Aeronautics and Space Administration for security research contributions.</p>
-      <span class="ach-badge">Letter of Recognition</span>
-    </div>
-    <div class="ach-card reveal" style="transition-delay:0.1s">
+      <span class="ach-badge">View Letter →</span>
+    </a>
+    <a href="images/cert.png" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;transition-delay:0.1s;">
       <span class="ach-org">Bali Provincial Government</span>
-      <div class="ach-icon">🌏</div>
+      <div class="ach-img-wrap"><img src="images/bali.png" alt="Bali" /></div>
       <h4>Certificate of Appreciation — Bali Government</h4>
       <p>Awarded a Certificate of Appreciation by the Bali Provincial Government for responsible vulnerability disclosure.</p>
-      <span class="ach-badge">Certificate</span>
-    </div>
-    <div class="ach-card reveal" style="transition-delay:0.2s">
+      <span class="ach-badge">View Certificate →</span>
+    </a>
+    <a href="images/tmobile_hof.png" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;transition-delay:0.2s;">
       <span class="ach-org">T-Mobile</span>
-      <div class="ach-icon">📱</div>
+      <div class="ach-img-wrap"><img src="images/tmobile.png" alt="T-Mobile" /></div>
       <h4>T-Mobile Acknowledgements Page Hall of Fame</h4>
-      <p>Listed on T-Mobile's official security acknowledgements page for responsible disclosure of a vulnerability affecting their systems.</p>
-      <span class="ach-badge">Hall of Fame</span>
-    </div>
-    <div class="ach-card reveal" style="transition-delay:0.3s">
-      <span class="ach-org">15+ Companies</span>
-      <div class="ach-icon">🎖️</div>
-      <h4>Global Security Recognitions</h4>
-      <p>Recognized and rewarded by over 15 organizations worldwide for responsible security research contributions spanning multiple industries and geographies.</p>
-      <span class="ach-badge">Multi-Org Recognition</span>
-    </div>
+      <p>Listed on T-Mobile's official security acknowledgements page for responsible disclosure of a vulnerability.</p>
+      <span class="ach-badge">View Page →</span>
+    </a>
+    <a href="https://www.credly.com/badges/9399bdbc-6b3b-4946-a22e-5252ed9634b0/public_url" target="_blank" class="ach-card reveal" style="text-decoration:none;display:block;transition-delay:0.3s;">
+      <span class="ach-org">GovTech Singapore</span>
+      <div class="ach-img-wrap"><img src="images/govtech.png" alt="GovTech Badge" /></div>
+      <h4>Information Disclosure — GovTech Singapore Badge</h4>
+      <p>Verified Credly badge awarded for the Information Disclosure finding in GovTech Singapore's Vulnerability Disclosure Programme.</p>
+      <span class="ach-badge">View Badge →</span>
+    </a>
   </div>
 </section>
 
