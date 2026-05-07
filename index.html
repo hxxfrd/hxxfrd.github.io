@@ -479,6 +479,7 @@ section { position:relative; z-index:1; padding:100px 60px; }
   padding:35px 30px;
   position:relative; overflow:hidden;
   transition:all 0.35s;
+  cursor: pointer;
 }
 .ach-card::before {
   content:'';
@@ -512,10 +513,18 @@ section { position:relative; z-index:1; padding:100px 60px; }
   transition:transform 0.4s;
 }
 .ach-card:hover .ach-img-wrap img { transform:scale(1.05); }
+.ach-badge {
   font-family:'Share Tech Mono',monospace;
   font-size:10px; letter-spacing:2px; padding:5px 14px;
   border:1px solid var(--yellow); color:var(--yellow);
-  text-transform:uppercase;
+  text-transform:uppercase; display: inline-block;
+  margin-top: 16px;
+  transition: all 0.3s;
+}
+.ach-card:hover .ach-badge {
+  background: rgba(255,214,10,0.1);
+  border-color: var(--cyan);
+  color: var(--cyan);
 }
 
 /* ── SKILLS ── */
@@ -796,7 +805,8 @@ footer {
         Dedicated security professional specializing in identifying, analyzing, and mitigating vulnerabilities across web, network, and API surfaces. 
       </p>
       <div class="hero-btns">
-        <a href="images/SANWOOLA_OF_CV.pdf" download class="btn-primary">Check Out Resume</a>
+        <!-- MODIFIED: Resume link now opens in new tab instead of downloading -->
+        <a href="images/SANWOOLA_OF_CV.pdf" target="_blank" class="btn-primary">Check Out Resume</a>
         <a href="#contact" class="btn-secondary">Request Consultation</a>
       </div>
       <div class="hero-socials">
@@ -901,7 +911,8 @@ footer {
         <span class="skill-tag">Recon-ng</span>
         <span class="skill-tag">Kali Linux</span>
       </div>
-      <a href="images/SANWOOLA_OLUWASEYI _CV.pdf" download class="btn-primary" style="display:inline-block; margin-top:10px;">Check Out Resume</a>
+      <!-- MODIFIED: Resume link opens in new tab -->
+      <a href="images/SANWOOLA_OLUWASEYI _CV.pdf" target="_blank" class="btn-primary" style="display:inline-block; margin-top:10px;">Check Out Resume</a>
     </div>
   </div>
 </section>
